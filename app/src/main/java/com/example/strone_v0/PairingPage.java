@@ -22,7 +22,7 @@ public class PairingPage extends AppCompatActivity implements BLEControllerListe
     private TextView logView;
     private Button connectButton;
     private Button disconnectButton;
-    private Button switchLEDButton;
+   // private Button switchLEDButton;
 
     public com.example.strone_v0.BLEController bleController;
     public static RemoteControl remoteControl;
@@ -44,7 +44,7 @@ public class PairingPage extends AppCompatActivity implements BLEControllerListe
 
         initConnectButton();
         initDisconnectButton();
-        initSwitchLEDButton();
+      //  initSwitchLEDButton();
 
         checkBLESupport();
         checkPermissions();
@@ -88,7 +88,7 @@ public class PairingPage extends AppCompatActivity implements BLEControllerListe
             }
         });
     }
-
+/*
     private void initSwitchLEDButton() {
         this.switchLEDButton = findViewById(R.id.switchButton);
         this.switchLEDButton.setOnClickListener(new View.OnClickListener() {
@@ -100,6 +100,7 @@ public class PairingPage extends AppCompatActivity implements BLEControllerListe
             }
         });
     }
+    */
 
     private void disableButtons() {
         runOnUiThread(new Runnable() {
@@ -107,7 +108,7 @@ public class PairingPage extends AppCompatActivity implements BLEControllerListe
             public void run() {
                 connectButton.setEnabled(false);
                 disconnectButton.setEnabled(false);
-                switchLEDButton.setEnabled(false);
+             //   switchLEDButton.setEnabled(false);
             }
         });
     }
@@ -203,7 +204,7 @@ public class PairingPage extends AppCompatActivity implements BLEControllerListe
             @Override
             public void run() {
                 disconnectButton.setEnabled(true);
-                switchLEDButton.setEnabled(true);
+                //switchLEDButton.setEnabled(true);
             }
         });
     }

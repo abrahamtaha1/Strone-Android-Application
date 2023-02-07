@@ -15,38 +15,45 @@
         android:text="Back"
         android:id="@+id/backBtn"/>
 
-    <Button
-        android:id="@+id/abeBtn"
+
+    <Switch
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/abeSwitch"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="16dp"
+        android:paddingHorizontal="20dp"
+        android:textColor="@color/black"
         android:background="@drawable/oval_btn"
-        android:text="Abraham: 1 Buzz" />
+        android:text="Keyword: Abraham 1 Buzz"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-    <Button
-        android:id="@+id/jorBtn"
+    <Switch
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@id/abeBtn"
-        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/jorSwitch"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
+        android:paddingHorizontal="20dp"
+        android:layout_below="@+id/abeSwitch"
+        android:textColor="@color/black"
         android:background="@drawable/oval_btn"
-        android:text="Jordan: 2 Buzz" />
+        android:text="Keyword: Jordan 2 Buzz"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-
-    <Button
-        android:id="@+id/alarmBtn"
+    <Switch
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@id/jorBtn"
-        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmSwitch"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
+        android:layout_below="@+id/jorSwitch"
+        android:paddingHorizontal="20dp"
+        android:textColor="@color/black"
         android:background="@drawable/oval_btn"
-        android:text="Fire Alarm: 3 Buzz" />
+        android:text="Keyword: Fire Alarm 3 Buzz"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
 
 
 

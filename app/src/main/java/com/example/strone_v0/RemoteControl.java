@@ -47,9 +47,5 @@ public class RemoteControl {
             this.bleController.sendData(createControlWord(Alarm_Command_on, on?VALUE_ON:VALUE_OFF));
         }
 
-        public void switchLED(boolean on) {
-            this.bleController.sendData(createControlWord(Abe_Command_on, on?VALUE_ON:VALUE_OFF));
-        }
-
     }
 

@@ -33,29 +33,20 @@
         android:id="@+id/connectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
         android:background="@drawable/oval_btn"
         android:text="Connect" />
 
     <Button
         android:id="@+id/disconnectButton"
         android:layout_width="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="40dp"
         android:layout_below="@id/connectButton"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="@drawable/oval_btn"
         android:text="Disconnect" />
-
-    <Button
-        android:id="@+id/switchButton"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/disconnectButton"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="@drawable/oval_btn"
-        android:text="Switch Led" />
 
 
     <Button
