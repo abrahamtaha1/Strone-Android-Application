@@ -9,16 +9,45 @@
     android:padding="20dp">
 
 
-<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="This is the Keyword Selection Page"/>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
         android:id="@+id/backBtn"/>
+
+    <Button
+        android:id="@+id/abeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/oval_btn"
+        android:text="Abraham: 1 Buzz" />
+
+    <Button
+        android:id="@+id/jorBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/abeBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/oval_btn"
+        android:text="Jordan: 2 Buzz" />
+
+
+    <Button
+        android:id="@+id/alarmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/jorBtn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/oval_btn"
+        android:text="Fire Alarm: 3 Buzz" />
+
+
 
 </RelativeLayout>

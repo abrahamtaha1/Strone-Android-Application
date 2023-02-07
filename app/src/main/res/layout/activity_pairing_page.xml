@@ -23,37 +23,39 @@
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        android:layout_height="124dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="150dp"
-        android:layout_marginLeft="15dp"/>
+        android:textColor="@color/white"
+        android:id="@+id/logView"/>
 
     <Button
-        android:id="@+id/searchDevBtn"
+        android:id="@+id/connectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:background="@drawable/oval_btn"
-        android:text="Search for Device" />
+        android:text="Connect" />
 
-    <TextView
-        android:layout_below="@+id/searchDevBtn"
-        android:layout_marginTop="20dp"
-        android:text="Found Devices"
-        android:textColor="@color/white"
-        android:textSize="25sp"
+    <Button
+        android:id="@+id/disconnectButton"
         android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/connectButton"
         android:layout_height="wrap_content"
-        android:id="@+id/foundDev"/>
+        android:layout_centerInParent="true"
+        android:background="@drawable/oval_btn"
+        android:text="Disconnect" />
 
-    <TextView
+    <Button
+        android:id="@+id/switchButton"
         android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/disconnectButton"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_below="@id/foundDev"
-        android:textColor="@color/white"
-        android:text="*\n\n*\n\n*\n\n*\n"/>
+        android:layout_centerInParent="true"
+        android:background="@drawable/oval_btn"
+        android:text="Switch Led" />
 
 
     <Button

@@ -15,6 +15,7 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         pairingBtn = findViewById(R.id.temp1);
+
         pairingBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
